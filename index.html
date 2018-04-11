@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lightpay</title>
+    <link rel="stylesheet" type="text/css" href="./app/css/styles.css">
+<script src="./app/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>   
+  <section>
+      <div class="head">
+        <div class="logo">
+          <a target="_bank" href="http://lightpay.it"><img src="./img/lightpay_logo.svg"></a>
+        </div>
+      </div> <!-- header section -->
+
+        <div class="form">
+
+        <form class="form__card is-active">
+          <p>
+          Lightpay is bringing <span class="bold">liquidity</span>, <span class="bold">decentralization</span>, and a <span class="bold">trustless</span> middleman to the Lightning Network. It is speeding up adoption for the next generation of sound money using the power of open source.
+          </p>
+          <p>
+          Use any Bitcoin wallet to pay any lightning invoice.
+          </p>      
+          <input class="form__input--text" type="email"/>
+          <input class="form__button js-next-form" type="button" value="Create a Swap"/>
+        </form>
+
+        <form class="form__card">
+          <div class="lp_qr">
+            <img src="./img/lp_test_qr.png">
+          </div>
+
+          <p>
+          Thanks for choosing to use Lightpay please scan the above QR code or pay the address and your invoice will be taken care of shortly:
+          </p>
+          <p class="address-btc">
+            1BoatSLRHtKNngkdXEeobR76b53LETtpyT
+          </p>
+          <p>
+            This is new technology and sometimes bugs happen. Your funds are safe in a fully refundable contract that sends the unclaimed fees to the secured paper wallet, you can download that below. 
+          </p>
+
+          <button class="form__download button" type="button" value="Your Paper Wallet" >Your Paper Wallet</button>
+          <button class="form__button js-next-form button" type="button" >Pay Invoice</button>
+        </form>
+
+        <form class="form__card">
+          
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+          <p>Your invoice has been paid, you should see your purchase completed. Thanks for using Lightpay! share it to the world!</p>
+          <p>Interested in Lightpay? Learn more about becoming a <a  target="_bank" href="#">Swap Provider</a>.
+</p>
+        </form>
+
+      </div>
+</section>
+     <script type="text/javascript" src="./app/js/app.js"></script>
+
+</body>
+</html>

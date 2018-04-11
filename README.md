@@ -1,20 +1,17 @@
-# lightpay-chrome-extension
-Atomic swaps for the Lightning Payment Network https://lightpay.it/
+# Chrome Extension Boilerplate
+Fork this repo, clone down to a directory, and start messing around! Most of your HTML, CSS, or JavaScript instincts are applicable to extension development.
 
-Pay a lightning invoice with any bitcoin wallet thought Atomic swaps for the Lightning Payment Network.
+Here's how to change some of the default values:
+* Currently injects `scripts.js` on any page within the [www.casey-reed.com](www.casey-reed.com) domain. To change that, alter the `"matches"` URL value in `manifest.json`.
+* When the extension icon is clicked, `index.html` is loaded  with `app.js`.
+* Change `img/logo.png` to an image with the same dimensions `256px X 256px` to get rid of my cartoon face.
+* There are no permissions declared in the `manifest.json` file. Check [Google's specs](https://developer.chrome.com/extensions/declare_permissions) to add your own.
+* After you've finished development, follow [Google's instructions](https://developer.chrome.com/webstore/publish) if you'd like to deploy to the Chrome Webstore.
 
+# Loading an Unpacked Extension into Chrome
 
-The Problem
-While the lightning network is allowing for faster transaction processing through open channel payments allowing for cheaper fees. Adoption will take time to reach a wider audience. Lightpay allows for wider user adoption without having the barrier of entry of running a lightning node to make a lightning payment.
+* To load the extension into Chrome for development, navigate to [chrome://extensions](chrome://extensions), enable Developer Mode, click "Load Unpacked Extension," and select the root directory for the extension project.
 
-Jim is trying to purchase a guitar on craigslist from Pam. Turns out Pam is only taking lightning network payments but Jim doesn’t have a lightning wallet/node to pay the invoice Pam created for the sale of her item. What does Jim do?
-
-Enter LightPay
-Lightpay chooses a swap provider that is willing and able to pay Pam’s lightning invoice through an atomic swap allowing for any coin to be used. The swap provider takes a small fee from Jim and then pays the invoice in question on Jim’s behalf. A swap provider is a user in the Lightpay network that is willing to fulfill an invoice. A provider is already running the lightning node and bcoin node that is required.
-
-Lightpay makes it easy for any user anywhere to use the lightning network. Lightpay makes it easy for a user with any bitcoin wallet to pay lightning invoices. Lightpay makes it easy for any user to become a swap provider. Lightpay makes it easy to pay a lightning invoice without needing to mess with code to spin up a lightning node or a bitcoin full node.
-
-
-
-LightPay Team
-[@alexbosworth](https://twitter.com/alexbosworth) [@micahstubbs](https://twitter.com/micahstubbs) [@arrship](https://twitter.com/arrship) [@steve_sarmiento](https://twitter.com/steve_sarmiento) [@uldis](https://twitter.com/uldis)
+# More Resources
+* [Google's Guide](https://developer.chrome.com/extensions/getstarted)
+* [Christian Cantrell's "Building Your First Chrome Extension" Video](https://www.youtube.com/watch?v=pT-b2SpFIWo)
